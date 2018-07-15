@@ -6,5 +6,5 @@ Install typescript packkage for NodeJS by running following command
 
 Follow instruction
 1. > cd directory
-2. tsc filename.ts
-3. node filename.js
+2. > tsc filename.ts
+3. > node filename.js
