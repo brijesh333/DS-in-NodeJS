@@ -43,4 +43,3 @@ l.addNode(1);
 l.addNode(2);
 l.addNode(3);
 l.printNode();
-console.log("print node method called");

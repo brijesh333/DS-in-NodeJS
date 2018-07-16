@@ -1,3 +1,6 @@
+// Given a linked list 1->2->3 will print 123 as number
+
+
 interface INode{
     key:number;
     next:INode;
@@ -26,6 +29,18 @@ export class list{
         }
     }
 
+    public listToNumber(head:INode){        
+        let n=0;
+        if(head==null){
+            return 0;
+        }
+        while(head!=null){
+            n=n*10+head.key;
+            head=head.next;
+        }
+        return n;
+    }
+
     public printNode(){
         if(this.head==null){
             console.log("empty Linked list")
@@ -45,3 +60,4 @@ l.addNode(1);
 l.addNode(2);
 l.addNode(3);
 l.printNode();
+console.log(l.listToNumber(l.head));

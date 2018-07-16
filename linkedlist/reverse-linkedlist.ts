@@ -26,7 +26,25 @@ export class list{
         }
     }
 
-    public printNode(){
+    public reverseList(){
+        let c:INode=null;
+        let p:INode=null;
+        let n:INode=null;
+        p=this.head;
+        c=p.next;
+        p.next=null;
+        n=c.next;
+        while(n!=null){
+            c.next=p;
+            p=c;
+            c=n;
+            n=c.next;
+        }
+        c.next=p;
+        this.head=c;
+    }
+
+    public printList(){
         if(this.head==null){
             console.log("empty Linked list")
         }
@@ -44,4 +62,8 @@ let l=new list();
 l.addNode(1);
 l.addNode(2);
 l.addNode(3);
-l.printNode();
+console.log("Linked list in original order:");
+l.printList();
+l.reverseList();
+console.log("Linked list in reverse order:")
+l.printList();

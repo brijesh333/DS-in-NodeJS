@@ -1,8 +1,8 @@
 # DS-in-NodeJS
 
 Install typescript packkage for NodeJS by running following command
-  npm install -g typescript
-  npm install node-typescript
+>npm install -g typescript
+>npm install node-typescript
 
 Follow instruction
 1. > cd directory
